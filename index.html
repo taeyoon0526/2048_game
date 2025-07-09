@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 게임</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>2048</h1>
+        <div class="score-container">
+          <div class="score-box">
+            <div class="score-label">점수</div>
+            <div class="score" id="score">0</div>
+          </div>
+          <div class="score-box">
+            <div class="score-label">최고점수</div>
+            <div class="score" id="best-score">0</div>
+          </div>
+          <div class="score-box">
+            <div class="score-label">이동 횟수</div>
+            <div class="score" id="move-count">0</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="game-explanation">
+        <strong>HOW TO PLAY:</strong> 방향키를 사용해서 타일을 움직이세요. 같은
+        숫자의 타일이 만나면 합쳐져서 하나가 됩니다!
+        <div class="keyboard-hint">
+          <span class="key">↑</span>
+          <span class="key">↓</span>
+          <span class="key">←</span>
+          <span class="key">→</span>
+          키를 사용하세요
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <div class="restart-button" id="restart-button">새 게임</div>
+        <div class="undo-button" id="undo-button">실행 취소</div>
+      </div>
+
+      <div class="game-container">
+        <div class="grid-container" id="grid-container"></div>
+        <div class="tile-container" id="tile-container"></div>
+      </div>
+
+      <div class="game-message" id="game-message">
+        <div class="message-content">
+          <p></p>
+          <div class="game-stats" id="game-stats"></div>
+          <div class="restart-button">다시 시도</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
